@@ -5,22 +5,22 @@ const LOADING_STEPS = [
   {
     message: 'Medicine content તપાસી રહ્યા છીએ...',
     icon: Search,
-    color: 'from-blue-500 to-blue-600',
+    color: 'from-rose-500 to-rose-700',
   },
   {
     message: 'Ingredients ઓળખી રહ્યા છીએ...',
     icon: Scan,
-    color: 'from-teal-500 to-emerald-500',
+    color: 'from-pink-500 to-rose-600',
   },
   {
     message: 'Safety information તૈયાર કરી રહ્યા છીએ...',
     icon: ShieldCheck,
-    color: 'from-amber-500 to-orange-500',
+    color: 'from-fuchsia-500 to-pink-600',
   },
   {
     message: 'Gujaratiમાં જવાબ તૈયાર કરી રહ્યા છીએ...',
     icon: Languages,
-    color: 'from-purple-500 to-indigo-500',
+    color: 'from-purple-500 to-fuchsia-600',
   },
 ];
 
@@ -36,9 +36,9 @@ export default function LoadingState() {
         {/* Animated Icon */}
         <div className="relative w-20 h-20 mx-auto mb-6">
           {/* Ripple rings */}
-          <div className="absolute inset-0 rounded-full bg-blue-200/30 animate-ripple" />
-          <div className="absolute inset-0 rounded-full bg-blue-200/20 animate-ripple" style={{ animationDelay: '0.5s' }} />
-          <div className="absolute inset-0 rounded-full bg-blue-200/10 animate-ripple" style={{ animationDelay: '1s' }} />
+          <div className="absolute inset-0 rounded-full bg-rose-200/40 animate-ripple" />
+          <div className="absolute inset-0 rounded-full bg-rose-200/30 animate-ripple" style={{ animationDelay: '0.5s' }} />
+          <div className="absolute inset-0 rounded-full bg-rose-200/20 animate-ripple" style={{ animationDelay: '1s' }} />
 
           {/* Center icon */}
           <div className={`relative w-20 h-20 rounded-2xl bg-gradient-to-br ${currentStep.color} flex items-center justify-center shadow-lg transition-all duration-500`}>

@@ -329,3 +329,43 @@
 .animate-pulse-soft {
   animation: pulse-soft 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
+
+/* ══════════════════════════════════════
+   LOADING STATE ANIMATIONS 
+   ══════════════════════════════════════ */
+@keyframes ripple {
+  0% { transform: scale(0.8); opacity: 1; }
+  100% { transform: scale(2.5); opacity: 0; }
+}
+
+@keyframes bounce-subtle {
+  0%, 100% { transform: translateY(-5%); animation-timing-function: cubic-bezier(0.8, 0, 1, 1); }
+  50% { transform: translateY(5%); animation-timing-function: cubic-bezier(0, 0, 0.2, 1); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-ripple {
+  animation: ripple 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.animate-bounce-subtle {
+  animation: bounce-subtle 2s infinite;
+}
+
+.progress-shimmer {
+  background: linear-gradient(90deg, #831843 25%, #e11d48 50%, #831843 75%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite linear;
+}
+
+.skeleton {
+  background: #fdf2f8;
+  background-image: linear-gradient(90deg, #fdf2f8 0px, #fce7f3 40px, #fdf2f8 80px);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+  border-radius: 0.75rem;
+}

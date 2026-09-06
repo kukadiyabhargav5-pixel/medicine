@@ -38,7 +38,7 @@ export default function SourceReferences({ references }: SourceReferencesProps) 
                 )}
               </div>
               <span className="px-2 py-0.5 bg-slate-100 text-slate-600 rounded text-[10px] sm:text-xs font-semibold whitespace-nowrap">
-                {ref.source}
+                {ref.organization}
               </span>
             </div>
           </div>
